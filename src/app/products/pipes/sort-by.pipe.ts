@@ -27,16 +27,16 @@ export class SortByPipe implements PipeTransform {
 
         if (OrderPageComponent.change) {
 
-          console.log(OrderPageComponent.change);
+          // console.log(OrderPageComponent.change);
           OrderPageComponent.change = false;
-          console.log(OrderPageComponent.change);
+          // console.log(OrderPageComponent.change);
           return heroes.sort( (a, b) => ( a.color > b.color ) ? 1 : -1 );
 
       } else {
 
-          console.log(OrderPageComponent.change);
+          // console.log(OrderPageComponent.change);
           OrderPageComponent.change = true;
-          console.log(OrderPageComponent.change);
+          // console.log(OrderPageComponent.change);
           return heroes.sort( (a, b) => ( a.color > b.color ) ? -1 : 1 );
 
         }
